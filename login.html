@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Spot Art Login</title>
+<link rel="stylesheet" href="layoutLogin.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+<div class="content first-content">
+<div class="first-column">
+
+<! entrar com uma conta ja existente –>
+
+<h2 class="title title-welcome">Bem vindo de volta!</h2>
+<p class="description description-primary"> Explore sua arte cm nós!  </p>
+<p class="description description-primary"> Conecte-se </p>
+<button id="signin" class="btn btn-primary"> Fazer Login </button>
+</div>
+<div class="second-column">
+
+<! criar uma conta nova –>
+
+<h2 class="title title-second"> Crie uma conta </h2>
+<p class="description description-second"> Utilize seu email para se registrar</p>
+<form id "formulario" autocomplete="off" method="GET" action="login.php">
+
+<label class="label-input" for="">
+<i class="fas fa-user"></i>
+<input type="text" placeholder="Usuário">
+</label>
+
+<label class="label-input" for="">
+<i class="fas fa-envelope"></i>
+<input type="email" placeholder="Email">
+</label>
+
+<label class="label-input" for="">
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="Senha">
+</label>
+
+<a href="index2"> <button class="btn btn-second"> Concluir </button> </a>
+</form>
+</div>
+</div>
+
+<div class="content second-content">
+<div class="first-column">
+
+<! cadastrar –>
+
+<h2 class="title title-primary">Olá, seja bem vindo!</h2>
+<p class="description description-primary"> Explore sua arte com nós! </p>
+<p class="description description-primary"> Ainda não tem uma conta? Cadastre-se aqui </p>
+<button  id="signup" class="btn btn-primary"> Cadastrar </button>
+</div>
+<div class="second-column">
+
+<! fazer login –>
+
+<h2 class="title title-second"> Faça login </h2>
+<p class="description description-second"> Utilize seu email para entrar </p>
+
+<form class="form">
+
+<label class="label-input" for="">
+<i class="fas fa-envelope"></i>
+<input type="email" placeholder="Email">
+</label>
+
+<label class="label-input" for="">
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="Senha">
+</label>
+
+<a class="password" href="#"> Esqueci minha senha </a>
+
+<a href="index2"> <button class="btn btn-second" > Entrar </button> </a>
+</form>
+
+</div>
+</div> <! second content fim ->
+</div> <! container fim ->
+
+<script src="jsLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* fonte tirada do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+font-family: 'Open-Sans', sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #2F4F4F;
+}
+
+.content{
+	background-color: #fff;
+	border-radius: 15px;
+	width: 960px;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.content::before{
+	content: "";
+	position: absolute;
+	background-color: #58af9b;
+	width: 40%;
+	height: 100%;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+	
+	left: 0;
+}
+
+
+.title{
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: captalize; /* coloca as primeiras letras de cada palavra em caixa alta */ 
+}
+.title-welcome{
+	color: #fff;
+}
+
+.title-primary{
+	color: #fff;
+}
+
+.title-second{
+	color: #58af9b;
+}
+
+.description{
+	font-size:14px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.description-primary{
+	color: #fff;
+}
+
+.description-second{
+	color: #7f8c8d;
+}
+
+.btn{
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 50px;
+	cursor: pointer;
+	font-weight: bold;
+	width: 150px;
+	align-self: center;
+	border: none;
+	margin-top: 1rem;
+}
+
+.btn-primary{
+	background-color: transparent;
+	border: 1px solid #fff;
+	transition: background-color 1s; /* transição animada para a cor do botão mudar */
+}
+
+.btn-primary:hover{
+	background-color: #fff;
+	border: 1px solid #58af9b;
+	color: #58af9b;
+}
+
+.btn-second{
+	background-color: #58af9b;
+	border: 1px solid #58af9b;
+	transition: background-color 1s;  
+}
+
+.btn-second:hover{
+	background-color: #fff;
+	border: 1px solid #66CDAA;
+	color: #58af9b;
+}
+
+.first-content{
+display: flex;	/* coloca as colunas uma ao lado da outra*/
+}
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+.first-column{
+	text-align: center;
+	width: 40%;
+	z-index: 10;
+}
+
+.second-column {
+	width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column; /* ajusta os dados para ficarem um abaixo do outro*/
+	width: 55%;
+}
+
+.form input{
+	height: 45px;
+	width: 100%;
+	border: none;
+	background-color: #ecf0f1;
+}
+
+/* ajustar as cores para o navegador */
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+/* conteúdo 2 */
+
+.second-content{
+	position: absolute;
+	display:flex;
+}
+
+.second-content .first-column{
+	order: 2;
+	z-index: -1; /* deixa o conteúdo 2 por baixo do 1 */
+}
+.second-content .second-column{
+	order: 1;
+	z-index: -1;
+
+}
+.password{
+	color: #34495e;
+	font-size: 14px;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.password::first-letter{
+	text-transform: captalize;
+}
+
+/* o primerio conteudo some, para o segundo aparecer */ 
+
+.sing-in-js .first-content .first-column, 
+.sing-in-js .first-content .second-column{
+	z-index: -1;
+}
+.sing-in-js .second-content .first-column,
+.sing-in-js .second-content .second-column{
+	z-index: 11;
+}
+
+/* transicao para o background-color mudar de lado */
+.sing-in-js .content::before{
+	left: 60%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+}
+
+/* o segundo conteudo some, para o primeiro aparecer */ 
+.sing-up-js .second-content .first-column,
+.sing-up-js .second-content .second-column{
+	z-index: -1;
+}
+.sing-up-js .first-content .first-column, 
+.sing-up-js .first-content .second-column{
+	z-index: 11;
+}
