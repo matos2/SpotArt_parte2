@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Spot Art - Atualizar</title>
+<link rel="stylesheet" href="layoutConfig.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+<div class="content first-content">
+<div class="first-column">
+
+<!-- Informações do usuário -->
+<h2 class="title title-welcome">Perfil de usuário</h2>
+<p class="description description-primary"> <i class="fas fa-user"></i> NomeDoUsuário </p>
+<p class="description description-primary"> <i class="fas fa-envelope"></i> Email </p>
+</div>
+<div class="second-column">
+
+<h2 class="title title-second"> Configurações da conta </h2>
+
+<!-- Atualizar dados -->
+
+<form id "formulario" autocomplete="off" method="GET" action="config.php">
+
+<label class="label-input" for="">
+<i class="fas fa-user"></i>
+<input type="text" placeholder="Usuário">
+</label>
+
+<label class="label-input" for="">
+<i class="fas fa-envelope"></i>
+<input type="email" placeholder="Email">
+</label>
+
+<label class="label-input" for="">
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="Senha">
+</label>
+
+<input class="btn btn_cad" type="submit" value="Atualizar" name="atualizar"> </br>
+
+<!-- Voltar para a tela de config -->
+
+<form action="config.html">
+<button class="btn btn-primary"> Voltar </button>
+</form>
+</form> 
+
+</div>
+</div>
+
+</div> <!-- container fim -->
+
+</body>
+</html>
