@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Spot Art Configurações</title>
+<title>Spot Art - Configurações</title>
 <link rel="stylesheet" href="layoutConfig.css" type="text/css" media="all">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -10,7 +10,8 @@
 <div class="content first-content">
 <div class="first-column">
 
-<h2 class="title title-welcome">Perfil de usuário</h2>
+<!-- Informações do usuário -->
+<h2 class="title title-wellcome">Perfil de usuário</h2>
 <p class="description description-primary"> <i class="fas fa-user"></i> NomeDoUsuário </p>
 <p class="description description-primary"> <i class="fas fa-envelope"></i> Email </p>
 </div>
@@ -18,13 +19,27 @@
 
 <h2 class="title title-second"> Configurações da conta </h2>
 
-<a class="description description-second" href="#"> Perfil público </a>
-<a class="description description-second" href="#"> Alterar email </a>
-<a class="description description-second" href="#"> Alterar senha </a>
-<a class="description description-second" href="#"> Sair </a>
-<a class="description description-second" href="#"> Excluir conta </a>
+<!-- Alterar dados no BD -->
+<form action="atualizar.html">
+<button class="btn btn-primary"> Atualizar dados </button>
+</form>
 
-<button class="btn btn-primary"> Concluir </button>
+<!-- Sair de Login-->
+<form action="index.html">
+<button class="btn btn-primary"> Sair </button>
+</form>
+
+<!-- Excluir usuário do BD -->
+<form action="atualizar.html">
+
+<form id "formulario" autocomplete="off" method="GET" action="config.php">
+<button class="btn btn-primary"> Excluir conta </button>
+</form>
+
+</form> 
+<form action="index2.html">
+<button class="btn btn-primary"> Voltar </button>
+</form>
 
 </div>
 </div>
