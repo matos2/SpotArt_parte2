@@ -26,6 +26,7 @@ background: #2F4F4F;
 	 width: 100%;
  }
  
+ /* botões */
  .btn{
 	border-radius: 15px;
 	text-transform: uppercase;
@@ -62,6 +63,32 @@ background: #2F4F4F;
 }
 
 .btn-config:hover{
+	background-color: #fff;
+	border: 1px solid #58af9b;
+	color: #58af9b;
+}
+
+.btn-post{
+	background-color: #58af9b;
+	display: flex;
+	border: 1px solid #fff;
+	transition: background-color 1s; /* transição animada para a cor do botão mudar */
+}
+
+.btn-post:hover{
+	background-color: #fff;
+	border: 1px solid #58af9b;
+	color: #58af9b;
+}
+
+.btn-salvar{
+	background-color: #58af9b;
+	display: flex;
+	border: 1px solid #fff;
+	transition: background-color 1s; /* transição animada para a cor do botão mudar */
+}
+
+.btn-salvar:hover{
 	background-color: #fff;
 	border: 1px solid #58af9b;
 	color: #58af9b;
