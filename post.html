@@ -1,0 +1,39 @@
+<!-- Página de postagens -->
+<html>
+<head>
+<title>Spot Art - New Post</title>
+<link rel="stylesheet" href="layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="container">
+<div id="cabecalho" title="nomeDoSite"> 
+</br>
+
+<!-- Nome do site -->
+
+<h1> SPOT ART </h1>
+</div>
+
+<!-- Realizar uma postagem de imagem da galeria do usuário -->
+
+<form id="formulario" action="ajax/salvar.php" method="post">
+
+<div class="form-group">
+<label> Nova postagem </label>
+
+<input class="form-control" type="file" name="foto"/> 
+</div>
+
+</form>
+
+<!-- Voltar a tela prncipal (index2) -->
+
+<form action="index2.html">
+    <button id="voltar" class="btn btn-salvar" type="submit" value="Voltar" /> Voltar </button>
+</form>
+
+</div>
+</body>
+</html>
